@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>IRC</title>
+</head>
+<body id="logged-out">
+<section id="chat">
+    <div class="list-messages">
+        <ul id="messages">
+        </ul>
+    </div>
+    <div class="send-message">
+        <form action="">
+            <input id="m" placeholder="Ecrivez votre message ici" autocomplete="off"/>
+            <button>Envoyer</button>
+        </form>
+    </div>
+    <aside class="list-users">
+        <ul id="users">
+        </ul>
+    </aside>
+    <div id="userafter">
+        <ul id="userfield">
+        </ul>
+    </div>
+</section>
+<div id="login">
+    <h1>Mon irc !</h1>
+    <p>identifie vous</p>
+    <form action="">
+        <label for="u">Username</label>
+        <input id="u" autocomplete="off" autofocus/>
+        <button>Login</button>
+    </form>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
